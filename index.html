@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fuck You</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+    background: #0a0a0a;
+    color: #fff;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  h1 {
+    font-size: clamp(3rem, 16vw, 14rem);
+    font-weight: 900;
+    letter-spacing: -0.04em;
+    line-height: 0.9;
+    text-transform: uppercase;
+  }
+
+  .finger {
+    font-size: clamp(4rem, 18vw, 15rem);
+    line-height: 1;
+    animation: bob 1.6s ease-in-out infinite;
+  }
+
+  @keyframes bob {
+    0%, 100% { transform: translateY(0); }
+    50%      { transform: translateY(-12px); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .finger { animation: none; }
+  }
+</style>
+</head>
+<body>
+  <h1>Fuck You</h1>
+  <div class="finger" role="img" aria-label="middle finger">🖕</div>
+</body>
+</html>
